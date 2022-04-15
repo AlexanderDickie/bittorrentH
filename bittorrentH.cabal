@@ -1,0 +1,34 @@
+cabal-version:      2.4
+name:               bittorrentH
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             alexanderdickie
+maintainer:         
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable bittorrentH
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules: Bencode, Write, Utils, Message, Peer, Meta, Types, Choker, PieceSelector
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.14.3.0, mtl,stm,time,network-simple,network,text,uri-encode,http-conduit ^>=2.3.7.4,attoparsec,bytestring, lens-family-core, containers, mtl, cryptohash, lens, random,async, terminal-progress-bar
+    hs-source-dirs:   app
+    default-language: Haskell2010
