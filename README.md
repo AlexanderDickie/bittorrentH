@@ -1,6 +1,6 @@
 # bittorrentH
 
-Implementation of most of the bittorrent protocol, in haskell.
+Implementation of most of the bittorrent protocol, written in Haskell.
 
 ## Usage
 Install cabal then:
@@ -12,11 +12,13 @@ cabal run bittorrentH
 ```
 ## Mostly need to:
 
-Improve error catching and handling
+- Improve error catching and handling
 
-Find more peers by: receive peer connections, poll the tracker more, poll multiple trackers, integrate udp for trackers\
-\
-Check and tune the peer upload process and end game algo\
-\
-Improve gui
+- Find more peers by: receive peer connections, poll the tracker more, poll multiple trackers, integrate udp for trackers
+
+- Check and tune the peer upload process and end game algo
+
+- Improve gui
+  
+
   
